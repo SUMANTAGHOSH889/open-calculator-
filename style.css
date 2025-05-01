@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(to right, #283c86, #45a247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .calculator {
+    background: #ffffff10;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 90%;
+    max-width: 360px;
+  }
+  .display {
+    background-color:#fff;
+    color: #000;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2em;
+    overflow-x: auto;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff22;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  button.clear {
+    background-color: #ff3b30cc;
+  }
+  button.clear:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  button.delete {
+    background-color: #ffaa00cc;
+    font-size: 1.5em;
+    
+  }
+  button.delete:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  button.equal {
+    background-color: #00cc66cc;
+  }
+  button.equal:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .developer-credit {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    color: #ffffffcc;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-style: italic;
+    background-color: #00000033;
+    padding: 5px 10px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+  }
